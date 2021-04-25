@@ -20,6 +20,7 @@ namespace csharp.Controllers
 
         public async Task<whereAmIRespons> GetMyGeoData(string myIp)
         {
+
             var httpClient = new HttpClient();
             var message = await httpClient.PostAsync("http://ip-api.com/batch", new StringContent($"[\"{myIp}\"]"));
             message.EnsureSuccessStatusCode();

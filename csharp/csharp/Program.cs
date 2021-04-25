@@ -6,6 +6,8 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using Serilog;
+using Serilog.Core;
 
 namespace csharp
 {
@@ -13,6 +15,11 @@ namespace csharp
     {
         public static void Main(string[] args)
         {
+            Log.Logger = new LoggerConfiguration()
+                .Enrich.FromLogContext()
+                .WriteTo.Console()
+                .WriteTo.File("C:/Log/CSharpBasic/Info.log")
+                .CreateLogger();
             CreateHostBuilder(args).Build().Run();
         }
 

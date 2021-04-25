@@ -26,6 +26,8 @@ namespace csharp
         {
             services.AddControllersWithViews();
             services.AddScoped<IgeoIpService,geoIpService>();
+            services.AddSwaggerGen();
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -54,6 +56,12 @@ namespace csharp
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
             });
+            app.UseSwagger();
+            app.UseSwaggerUI(c =>
+                {
+                    c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API v1");
+                }
+            );
         }
     }
 }

@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Serilog;
 
 namespace csharp.Controllers
 {
@@ -16,11 +17,13 @@ namespace csharp.Controllers
         {
             _geoIpService = geosGeoIpService;
         }
+        
+        [HttpGet]
         public async Task<IActionResult> Index()
         {
             var myip = await _geoIpService.GetMyip();
-            var myGeoData = _geoIpService.GetMyGeoData(myip);
-
+            var myGeoData = await _geoIpService.GetMyGeoData(myip);
+            
             return new JsonResult( myGeoData );
         }
     }

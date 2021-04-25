@@ -1,23 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\csharpCourse\\csharp\\csharp\\csharp.csproj": {}
+    "D:\\project\\Csharp\\csharp_ska\\csharp\\csharp\\csharp.csproj": {}
   },
   "projects": {
-    "D:\\csharpCourse\\csharp\\csharp\\csharp.csproj": {
+    "D:\\project\\Csharp\\csharp_ska\\csharp\\csharp\\csharp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\csharpCourse\\csharp\\csharp\\csharp.csproj",
+        "projectUniqueName": "D:\\project\\Csharp\\csharp_ska\\csharp\\csharp\\csharp.csproj",
         "projectName": "csharp",
-        "projectPath": "D:\\csharpCourse\\csharp\\csharp\\csharp.csproj",
-        "packagesPath": "C:\\Users\\ted.wang39\\.nuget\\packages\\",
-        "outputPath": "D:\\csharpCourse\\csharp\\csharp\\obj\\",
+        "projectPath": "D:\\project\\Csharp\\csharp_ska\\csharp\\csharp\\csharp.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "D:\\project\\Csharp\\csharp_ska\\csharp\\csharp\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\ted.wang39\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -43,7 +40,11 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
-            "Swashbuckle.AspNetCore.Swagger": {
+            "Serilog.AspNetCore": {
+              "target": "Package",
+              "version": "[4.1.0, )"
+            },
+            "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.1.3, )"
             }
