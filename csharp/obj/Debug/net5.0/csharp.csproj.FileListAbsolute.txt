@@ -9,7 +9,6 @@ D:\csharpCourse\csharp\csharp\bin\Debug\net5.0\ref\csharp.dll
 D:\csharpCourse\csharp\csharp\bin\Debug\net5.0\csharp.pdb
 D:\csharpCourse\csharp\csharp\bin\Debug\net5.0\csharp.Views.dll
 D:\csharpCourse\csharp\csharp\bin\Debug\net5.0\csharp.Views.pdb
-D:\csharpCourse\csharp\csharp\obj\Debug\net5.0\csharp.csprojAssemblyReference.cache
 D:\csharpCourse\csharp\csharp\obj\Debug\net5.0\csharp.GeneratedMSBuildEditorConfig.editorconfig
 D:\csharpCourse\csharp\csharp\obj\Debug\net5.0\csharp.AssemblyInfoInputs.cache
 D:\csharpCourse\csharp\csharp\obj\Debug\net5.0\csharp.AssemblyInfo.cs
